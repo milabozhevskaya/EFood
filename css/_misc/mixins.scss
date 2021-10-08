@@ -1,0 +1,8 @@
+//mixin for background of section
+@mixin bg-section ($bg-img-url) {
+  background-image: url("../../img/bg/#{$bg-img-url}.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+}
