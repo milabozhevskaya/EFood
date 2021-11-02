@@ -1,0 +1,248 @@
+.service {
+  margin-bottom: rem(86px);
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__title {
+    margin-bottom: rem(55px);
+  }
+
+  .categories {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    &__display {
+      margin-bottom: rem(39px);
+    }
+
+    &__list {
+      margin-bottom: rem(40px);
+    }
+  }
+
+  .display {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    column-gap: rem(26px);
+
+    &__item {
+      background-color: $white;
+      width: 20%;
+      box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.12);
+      border-radius: 8px;
+      background-color: $white;
+      color: $dark;
+      transition: all .4s;
+
+      &--active {
+        background-color: $orange;
+        color: $white;
+        transition: all .6s;
+      }
+
+      &:hover {
+        background-color: $orange;
+        color: $white;
+        transition: all .6s;
+      }
+    }
+
+    &__btn {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      justify-content: center;
+      padding: rem(13px) 0;
+    }
+
+    &__pic {
+      margin-right: rem(8px);
+      
+    }
+
+    &__icon {
+      fill: currentColor;
+      width: rem(44px);
+      height: rem(44px);
+      display: flex;
+      align-items: center;
+    }
+
+    &__name {
+      font-family: 'Rubik', sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }
+
+  .category {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    column-gap: rem(26px);
+
+    &__item {
+      background-color: $white;
+      width: 20%;
+      box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.12);
+      background: #FFFFFF;
+      border-radius: 12px;
+      background-color: $white;
+      color: $dark;
+      transition: all .4s;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-bottom: rem(22px);
+      &.half-star {
+        & .category__icon:last-child {
+          display: block;
+        }
+        & .category__icon:nth-child(4) {
+          display: none;
+        }
+      }
+    }
+
+    &__img {
+      width: 80%;
+      max-width: rem(144px);
+    }
+
+    &__pic {
+      width: 100%;
+      object-fit: cover;
+      aspect-ratio: 1;
+    }
+
+    &__stars {
+      margin-top: -7%;
+    }
+
+    &__icon {
+      width: rem(20px);
+      height: rem(20px);
+      position: relative;
+      display: block;
+
+      &:not(:last-child) {
+        margin-right: rem(5px);
+      }
+
+      &:last-child {
+        display: none;
+      }
+    }
+
+    &__stars {
+      display: flex;
+      margin-bottom: rem(27px);
+    }
+
+    &__desc {
+      font-family: 'Rubik', sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 15px;
+      line-height: 18px;
+      color: $dark;
+      margin-bottom: rem(9px);
+      text-align: center;
+    }
+
+    &__rate {
+      font-family: 'Rubik', sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 18px;
+      margin-bottom: rem(11px);
+    }
+
+    &__btn {
+      button {
+        box-shadow: none;
+      }
+    }
+  }
+
+  .pagination {
+    color: #D1D2DC;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__prev {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: rem(34px);
+      height: rem(34px);
+      border-radius: 50%;
+      border: 1px solid currentColor;
+      transition: .4s;
+      margin-right: rem(25px);
+      cursor: pointer;
+
+      &:hover {
+        transition: .4s;
+        color: $orange;
+      }
+    }
+
+    &__icon {
+      fill: currentColor;
+      width: rem(10px);
+      height: rem(16px);
+      transition: .4s;
+    }
+
+    &__list {
+      display: flex;
+      align-items: center;
+      margin-right: rem(25px);
+    }
+
+    &__item {
+      transition: .4s;
+
+      a {
+        width: rem(20px);
+        height: rem(20px);
+        position: relative;
+        display: block;
+
+        &::before {
+          content: '';
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%,-50%);
+          background: currentColor;
+          width: 13px;
+          height: 13px;
+          border-radius: 50%;
+          transition: .4s;
+          display: block;
+        }
+      }
+
+      &--active {
+        color: $orange;
+      }
+
+      &:hover {
+        transition: .4s;
+        color: $orange;
+      }
+    }
+  }
+}

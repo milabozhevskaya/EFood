@@ -1,0 +1,100 @@
+.home {
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: rem(95px);
+  }
+
+  &__content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding-top: rem(55px);
+  }
+
+  &__title {
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 66px;
+    line-height: 78px;
+    text-transform: capitalize;
+    color: $dark;
+    margin-bottom: rem(23px);
+
+    span:nth-child(2) {
+      color: $orange;
+    }
+  }
+
+  &__subtitle {
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+    text-transform: capitalize;
+    margin-bottom: rem(45px);
+    color: $dark;
+  }
+
+  &__btn {
+    margin-right: rem(30px);
+  }
+
+  &__ref {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    text-decoration-line: underline;
+    color: $dark;
+  }
+
+  &__img {
+    width: 55%;
+    flex-shrink: 0;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 19%;
+      left: 25%;
+      width: rem(154px);
+      height: rem(54px);
+      background: radial-gradient(50% 50% at 50% 50%, #FEF8F5 0%, rgba(255, 255, 255, 0.79) 100%);
+      background-image: url('../../img/review.png');
+      background-position: center center;
+      box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.12);
+      border-radius: 6px;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 39%;
+      right: -14%;
+      width: rem(220px);
+      height: rem(85px);
+      background: radial-gradient(50% 50% at 50% 50%, #FEF8F5 0%, rgba(255, 255, 255, 0.79) 100%);
+      box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.07);
+      border-radius: 12px;
+      background-image: url('../../img/sandwich.png');
+      background-position-x: 13px;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+
+  &__pic {
+    display: block;
+    width: 107%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    right: -5%;
+  }
+}

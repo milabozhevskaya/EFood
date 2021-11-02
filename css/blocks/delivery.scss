@@ -1,0 +1,70 @@
+.delivery {
+  color: $dark;
+  margin-bottom: rem(128px);
+
+  &__container {
+    display: flex;
+    align-items: center;
+  }
+
+  &__img {
+    width: 54%;
+    overflow: hidden;
+    flex-shrink: 0;
+    margin-right: 130px;
+  }
+
+  &__pic {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  &__desc {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    margin-bottom: rem(30px);
+  }
+
+  &__text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: rem(13px);
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: rem(50px);
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 30px;
+    text-transform: capitalize;
+
+    &:not(:last-child) {
+      margin-bottom: rem(22px);
+    }
+  }
+
+  &__icon {
+    width: 40px;
+    height: 34px;
+    display: block;
+    margin-right: rem(28px);
+  }
+
+  & button {
+    border-radius: rem(30px) rem(30px) 1px rem(30px);
+    padding: rem(17px) rem(44px);
+  }
+}

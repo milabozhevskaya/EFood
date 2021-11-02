@@ -1,3 +1,8 @@
+
+$orange: #FF6838;
+$dark: #363853;
+$white: #ffffff;
+
 @import "_misc/normalize.scss";
 @import "_misc/fonts.scss";
 @import "_misc/media.scss";
@@ -5,3 +10,17 @@
 @import "_misc/normalize.scss";
 
 @import "blocks/header.scss";
+@import "blocks/logo.scss";
+@import "blocks/nav.scss";
+@import "blocks/search.scss";
+@import "blocks/title.scss";
+@import "blocks/buy.scss";
+@import "blocks/btn.scss";
+@import "blocks/home.scss";
+@import "blocks/service.scss";
+@import "blocks/delivery.scss";
+@import "blocks/top.scss";
+@import "blocks/app.scss";
+@import "blocks/reviews.scss";
+@import "blocks/subscribe.scss";
+@import "blocks/footer.scss";

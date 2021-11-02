@@ -1,0 +1,13 @@
+.title {
+  font-family: 'Rubik', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 43px;
+  text-transform: capitalize;
+  color: $dark;
+
+  span {
+    color: $orange;
+  }
+}

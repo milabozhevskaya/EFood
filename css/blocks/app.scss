@@ -1,0 +1,56 @@
+.app {
+  margin-bottom: rem(167px);
+  
+  &__container {
+    display: flex;
+    align-items: center;
+  }
+
+  &__desc {
+    display: flex;
+    flex-direction: column;
+    color: $dark;
+    padding-right: rem(10px);
+  }
+
+  &__title {
+    margin-bottom: rem(30px);
+  }
+
+  &__text {
+    margin-bottom: rem(30px);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  & .apps {
+    display: flex;
+    align-items: center;
+
+    &__store {
+      display: flex;
+      margin-right: rem(35px);
+      width: rem(120px);
+      height: rem(40px);
+      
+    }
+
+    &__google {
+      display: flex;
+      width: rem(135px);
+      height: rem(40px);
+    }
+  }
+
+  &__img {
+    width: 52.8%;
+    flex-shrink: 0;
+  }
+
+  &__pic {
+    width: 100%;
+    object-fit: cover;
+  }
+}

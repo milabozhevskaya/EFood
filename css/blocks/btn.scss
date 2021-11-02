@@ -1,0 +1,22 @@
+.btn {
+  font-family: 'Rubik', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  padding: rem(15px) rem(28px);
+  border-radius: 5px;
+  transition: .6s;
+
+  &--orange {
+    color: $white;
+    background-color: $orange;
+    box-shadow: 0px 22px 40px rgba(255, 104, 56, 0.19);
+  }
+
+  &:hover {
+    background-color: $dark;
+    transition: .6s;
+  }
+}

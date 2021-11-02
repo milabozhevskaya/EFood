@@ -1,0 +1,28 @@
+.nav {
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: $dark;
+    transition: .6s;
+
+    &--active {
+      color: $orange;
+    }
+
+    &:hover {
+      color: $orange;
+      transition: .6s;
+    }
+
+    &:not(:last-child) {
+      margin-right: rem(57px);
+    }
+  }
+}

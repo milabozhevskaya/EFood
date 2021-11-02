@@ -1,0 +1,18 @@
+.logo {
+  font-family: 'Rubik', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 33px;
+  line-height: 39px;
+  letter-spacing: -2px;
+  color: $dark;
+
+  span {
+    letter-spacing: 1px;
+  }
+
+  span:first-child {
+    letter-spacing: -1.5px;
+    color: $orange;
+  }
+}

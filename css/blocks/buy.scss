@@ -1,0 +1,41 @@
+.buy {
+  margin-right: rem(60px);
+  position: relative;
+
+  &__icon {
+    width: rem(25px);
+    height: rem(25px);
+    stroke: #363853;
+    fill: none;
+    stroke-width: 1.5px;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    transition: .6s;
+  }
+
+  &::before {
+    content: attr(data-count);
+    position: absolute;
+    top: -11%;
+    right: -22%;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background-color: $orange;
+    color: $white ;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &:hover {
+    & .buy__icon {
+      transition: .6s;
+      stroke: $orange;
+    }
+  }
+}

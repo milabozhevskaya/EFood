@@ -5,22 +5,779 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="./css/main.scs">
+  <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
   <div class="wrapper">
     <header class="header">
       <div class="container header__container">
-        <div class="header__logo">
-          <span>EFood</span>
-        </div>
-        <div class="header__">
-          <nav class="nav header__nav">
-
-          </nav>
+        <a href="#" class="header__logo logo">
+          <span>E</span>
+          <span>Food</span>
+        </a>
+        <nav class="nav header__nav">
+          <ul class="nav__list">
+            <li class="nav__item nav__item--active">
+              <a href="#home" class="nav__ref">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#service" class="nav__ref">Service</a>
+            </li>
+            <li class="nav__item">
+              <a href="#cities" class="nav__ref">Top cities</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__ref">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__right">
+          <div class="search">
+            <button class="search__ref">
+              <svg class="search__icon">
+                <use xlink:href="./img/icons/sprite.svg#search"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="buy" data-count="4">
+            <button class="buy__ref">
+              <svg class="buy__icon">
+                <use xlink:href="./img/icons/sprite.svg#buy"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="header__button">
+            <button class="btn btn--orange">Sign up</button>
+          </div>
         </div>
       </div>
     </header>
+    <section id="home" class="section home">
+      <div class="container home__container">
+        <div class="home__content">
+          <h1 class="home__title">
+            <span>Super Fast</span> <span>Food<br>Delivery</span> <span>Service</span>
+          </h1>
+          <div class="home__subtitle">
+            <p>We provide super fast-delivery service. Let’s use our services right now and get discounts of up to 50%</p>
+          </div>
+          <div class="home__btns">
+            <button class="btn btn--orange home__btn">Explore Food</button>
+            <a href="#" class="home__ref">Download App</a>
+          </div>
+        </div>
+        <div class="home__img">
+          <img src="./img/guy.png" alt="Guy dilivery" class="home__pic">
+        </div>
+      </div>
+    </section>
+    <section class="section service" id="service">
+      <div class="container service__container">
+        <h2 class="service__title title">Our popular <span>Category</span></h2>
+        <div class="service__categories categories">
+          <ul class="categories__display display">
+            <li class="display__item display__item--active">
+              <a href="#" class="display__btn">
+                <div class="display__pic">
+                  <svg class="display__icon">
+                    <use xlink:href="./img/icons/sprite.svg#burger"></use>
+                  </svg>
+                </div>
+                <div class="display__name">Burger</div>
+              </a>
+            </li>
+            <li class="display__item">
+              <a href="#" class="display__btn">
+                <div class="display__pic">
+                  <svg class="display__icon">
+                    <use xlink:href="./img/icons/sprite.svg#pizza"></use>
+                  </svg>
+                </div>
+                <div class="display__name">Pizza</div>
+              </a>
+            </li>
+            <li class="display__item">
+              <a href="#" class="display__btn">
+                <div class="display__pic">
+                  <svg class="display__icon">
+                    <use xlink:href="./img/icons/sprite.svg#sandwich"></use>
+                  </svg>
+                </div>
+                <div class="display__name">Sandwich</div>
+              </a>
+            </li>
+            <li class="display__item">
+              <a href="#" class="display__btn">
+                <div class="display__pic">
+                  <svg class="display__icon">
+                    <use xlink:href="./img/icons/sprite.svg#food"></use>
+                  </svg>
+                </div>
+                <div class="display__name">Asian Food</div>
+              </a>
+            </li>
+            <li class="display__item">
+              <a href="#" class="display__btn">
+                <div class="display__pic">
+                  <svg class="display__icon">
+                    <use xlink:href="./img/icons/sprite.svg#dish"></use>
+                  </svg>
+                </div>
+                <div class="display__name">Set Menu</div>
+              </a>
+            </li>
+          </ul>
+          <ul class="categories__list category">
+            <li class="category__item">
+              <div class="category__img">
+                <img src="./img/cheeseburger.png" alt="Cheesburger" class="category__pic">
+              </div>
+              <div class="category__stars">
+                <svg class="category__icon">
+                  <use xlink:href="./img/icons/sprite.svg#star"></use>
+                </svg>
+                <svg class="category__icon">
+                  <use xlink:href="./img/icons/sprite.svg#star"></use>
+                </svg>
+                <svg class="category__icon">
+                  <use xlink:href="./img/icons/sprite.svg#star"></use>
+                </svg>
+                <svg class="category__icon">
+                  <use xlink:href="./img/icons/sprite.svg#star"></use>
+                </svg>
+                <svg class="category__icon">
+                  <use xlink:href="./img/icons/sprite.svg#star"></use>
+                </svg>
+                <svg class="category__icon">
+                  <use xlink:href="./img/icons/sprite.svg#half-star"></use>
+                </svg>
+              </div>
+              <div class="category__desc">
+                <p>Cheeseburger With Salad</p>
+              </div>
+              <div class="category__rate">
+                <span>$18.00</span>
+              </div>
+              <div class="category__btn">
+                <button class="btn btn--orange">Add to Cart</button>
+              </div>
+            </li>
+            <li class="category__item half-star">
+              <div class="category__img">
+                <img src="./img/beef.png" alt="Beef Burger" class="category__pic">
+              </div>
+              <div class="category__stars">
+                <svg class="category__icon">
+                  <use xlink:href="./img/icons/sprite.svg#star"></use>
+                </svg>
+                <svg class="category__icon">
+                  <use xlink:href="./img/icons/sprite.svg#star"></use>
+                </svg>
+                <svg class="category__icon">
+                  <use xlink:href="./img/icons/sprite.svg#star"></use>
+                </svg>
+                <svg class="category__icon">
+                  <use xlink:href="./img/icons/sprite.svg#star"></use>
+                </svg>
+                <svg class="category__icon">
+                  <use xlink:href="./img/icons/sprite.svg#star"></use>
+                </svg>
+                <svg class="category__icon">
+                  <use xlink:href="./img/icons/sprite.svg#half-star"></use>
+                </svg>
+              </div>
+              <div class="category__desc">
+                <p>Beef Burger</p>
+              </div>
+              <div class="category__rate">
+                <span>$15.00</span>
+              </div>
+              <div class="category__btn">
+                <button class="btn btn--orange">Add to Cart</button>
+              </div>
+            </li>
+            <li class="category__item">
+              <div class="category__img">
+                <img src="./img/royel.png" alt="Royel Burger" class="category__pic">
+              </div>
+              <div class="category__stars">
+                <svg class="category__icon">
+                  <use xlink:href="./img/icons/sprite.svg#star"></use>
+                </svg>
+                <svg class="category__icon">
+                  <use xlink:href="./img/icons/sprite.svg#star"></use>
+                </svg>
+                <svg class="category__icon">
+                  <use xlink:href="./img/icons/sprite.svg#star"></use>
+                </svg>
+                <svg class="category__icon">
+                  <use xlink:href="./img/icons/sprite.svg#star"></use>
+                </svg>
+                <svg class="category__icon">
+                  <use xlink:href="./img/icons/sprite.svg#star"></use>
+                </svg>
+                <svg class="category__icon">
+                  <use xlink:href="./img/icons/sprite.svg#half-star"></use>
+                </svg>
+              </div>
+              <div class="category__desc">
+                <p>Royel Cheeseburger</p>
+              </div>
+              <div class="category__rate">
+                <span>$16.00</span>
+              </div>
+              <div class="category__btn">
+                <button class="btn btn--orange">Add to Cart</button>
+              </div>
+            </li>
+            <li class="category__item">
+              <div class="category__img">
+                <img src="./img/black.png" alt="Black gamburger" class="category__pic">
+              </div>
+              <div class="category__stars">
+                <svg class="category__icon">
+                  <use xlink:href="./img/icons/sprite.svg#star"></use>
+                </svg>
+                <svg class="category__icon">
+                  <use xlink:href="./img/icons/sprite.svg#star"></use>
+                </svg>
+                <svg class="category__icon">
+                  <use xlink:href="./img/icons/sprite.svg#star"></use>
+                </svg>
+                <svg class="category__icon">
+                  <use xlink:href="./img/icons/sprite.svg#star"></use>
+                </svg>
+                <svg class="category__icon">
+                  <use xlink:href="./img/icons/sprite.svg#star"></use>
+                </svg>
+                <svg class="category__icon">
+                  <use xlink:href="./img/icons/sprite.svg#half-star"></use>
+                </svg>
+              </div>
+              <div class="category__desc">
+                <p>Black Gambugrer </p>
+              </div>
+              <div class="category__rate">
+                <span>$14.00</span>
+              </div>
+              <div class="category__btn">
+                <button class="btn btn--orange">Add to Cart</button>
+              </div>
+            </li>
+            <li class="category__item">
+              <div class="category__img">
+                <img src="./img/chicken.png" alt="Chicken Burger" class="category__pic">
+              </div>
+              <div class="category__stars">
+                <svg class="category__icon">
+                  <use xlink:href="./img/icons/sprite.svg#star"></use>
+                </svg>
+                <svg class="category__icon">
+                  <use xlink:href="./img/icons/sprite.svg#star"></use>
+                </svg>
+                <svg class="category__icon">
+                  <use xlink:href="./img/icons/sprite.svg#star"></use>
+                </svg>
+                <svg class="category__icon">
+                  <use xlink:href="./img/icons/sprite.svg#star"></use>
+                </svg>
+                <svg class="category__icon">
+                  <use xlink:href="./img/icons/sprite.svg#star"></use>
+                </svg>
+                <svg class="category__icon">
+                  <use xlink:href="./img/icons/sprite.svg#half-star"></use>
+                </svg>
+              </div>
+              <div class="category__desc">
+                <p>Chicken Burger</p>
+              </div>
+              <div class="category__rate">
+                <span>$15.00</span>
+              </div>
+              <div class="category__btn">
+                <button class="btn btn--orange">Add to Cart</button>
+              </div>
+            </li>
+          </ul>
+          <div class="categories__pagination pagination">
+            <div class="pagination__prev">
+              <svg class="pagination__icon">
+                <use xlink:href="./img/icons/sprite.svg#vector"></use>
+              </svg>
+            </div>
+            <ul class="pagination__list">
+              <li class="pagination__item">
+                <a href="#" class="pagination__ref" aria-label="point-pagination"></a>
+              </li>
+              <li class="pagination__item">
+                <a href="#" class="pagination__ref" aria-label="point-pagination"></a>
+              </li>
+              <li class="pagination__item">
+                <a href="#" class="pagination__ref" aria-label="point-pagination"></a>
+              </li>
+              <li class="pagination__item">
+                <a href="#" class="pagination__ref" aria-label="point-pagination"></a>
+              </li>
+            </ul>
+            <div class="pagination__prev">
+              <svg class="pagination__icon">
+                <use xlink:href="./img/icons/sprite.svg#vector"></use>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section delivery" id="delivery">
+      <div class="container delivery__container">
+        <div class="delivery__img">
+          <img src="./img/delivery.png" alt="Delivery" class="delivery__pic">
+        </div>
+        <div class="delivery__desc">
+          <h2 class="delivery__title title">
+            <span>Stay</span> at home, we will Provide <span>good food</span>
+          </h2>
+          <div class="delivery__text">
+            <p>
+              We provide tasty food and superfast delivery at your home.  Let’s use our services right now and get discounts of up to 50%.
+            </p>
+          </div>
+          <ul class="delivery__list">
+            <li class="delivery__item">
+              <svg class="delivery__icon">
+                <use xlink:href="./img/icons/sprite.svg#timer"></use>
+              </svg>
+            <div class="delivery__name">fasted delivery in 30 Minutes</div>
+            </li>
+            <li class="delivery__item">
+              <svg class="delivery__icon">
+                <use xlink:href="./img/icons/sprite.svg#men"></use>
+              </svg>
+            <div class="delivery__name">300+ delivery men</div>
+            </li>
+            <li class="delivery__item">
+              <svg class="delivery__icon">
+                <use xlink:href="./img/icons/sprite.svg#restaurant"></use>
+              </svg>
+            <div class="delivery__name">500+ restaurant & cafe shop</div>
+            </li>
+          </ul>
+          <div class="delivery__btn">
+            <button class="btn btn--orange">See more</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section top" id="top">
+      <div class="container top__container">
+        <h2 class="title top__title">Top Food <span>restaurant</span></h2>
+        <ul class="top__list pizza">
+          <li class="pizza__item">
+            <div class="pizza__img">
+              <img src="./img/pizza-base.jpg" class="pizza__pic" alt="Pizza base">
+            </div>
+            <div class="pizza__desc">
+              <h4 class="pizza__title">Blaze Pizza</h4>
+              <div class="pizza__line">
+                <svg class="pizza__icon">
+                  <use xlink:href="./img/icons/sprite.svg#time"></use>
+                </svg>
+                <span>11.00 AM - 10.00 PM</span>
+                <div class="pizza__btn">
+                  <button class="btn btn--orange">
+                    <svg class="pizza__btn-icon">
+                      <use xlink:href="./img/icons/sprite.svg#arrow"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="pizza__item">
+            <div class="pizza__img">
+              <img src="./img/pizza-ranch.png" class="pizza__pic" alt="Pizza ranch">
+            </div>
+            <div class="pizza__desc">
+              <h4 class="pizza__title">Pizza Ranch</h4>
+              <div class="pizza__line">
+                <svg class="pizza__icon">
+                  <use xlink:href="./img/icons/sprite.svg#time"></use>
+                </svg>
+                <span>09.00 AM - 10.00 PM</span>
+                <div class="pizza__btn">
+                  <button class="btn btn--orange">
+                    <svg class="pizza__btn-icon">
+                      <use xlink:href="./img/icons/sprite.svg#arrow"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="pizza__item">
+            <div class="pizza__img">
+              <img src="./img/pizza-dion.png" class="pizza__pic" alt="Dion’s Pizza Hut">
+            </div>
+            <div class="pizza__desc">
+              <h4 class="pizza__title">Dion’s Pizza Hut</h4>
+              <div class="pizza__line">
+                <svg class="pizza__icon">
+                  <use xlink:href="./img/icons/sprite.svg#time"></use>
+                </svg>
+                <span>10.00 AM - 12.00 PM</span>
+                <div class="pizza__btn">
+                  <button class="btn btn--orange">
+                    <svg class="pizza__btn-icon">
+                      <use xlink:href="./img/icons/sprite.svg#arrow"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="pizza__item">
+            <div class="pizza__img">
+              <img src="./img/burger-riyel.png" class="pizza__pic" alt="Burger riyel">
+            </div>
+            <div class="pizza__desc">
+              <h4 class="pizza__title">Royel Burger</h4>
+              <div class="pizza__line">
+                <svg class="pizza__icon">
+                  <use xlink:href="./img/icons/sprite.svg#time"></use>
+                </svg>
+                <span>11.00 AM - 10.00 PM</span>
+                <div class="pizza__btn">
+                  <button class="btn btn--orange">
+                    <svg class="pizza__btn-icon">
+                      <use xlink:href="./img/icons/sprite.svg#arrow"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="pizza__item">
+            <div class="pizza__img">
+              <img src="./img/free.png" class="pizza__pic" alt="Free">
+            </div>
+            <div class="pizza__desc">
+              <h4 class="pizza__title">KFC Restaurant</h4>
+              <div class="pizza__line">
+                <svg class="pizza__icon">
+                  <use xlink:href="./img/icons/sprite.svg#time"></use>
+                </svg>
+                <span>09.00 AM - 10.00 PM</span>
+                <div class="pizza__btn">
+                  <button class="btn btn--orange">
+                    <svg class="pizza__btn-icon">
+                      <use xlink:href="./img/icons/sprite.svg#arrow"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="pizza__item">
+            <div class="pizza__img">
+              <img src="./img/star.png" class="pizza__pic" alt="Burger star">
+            </div>
+            <div class="pizza__desc">
+              <h4 class="pizza__title">Star Food</h4>
+              <div class="pizza__line">
+                <svg class="pizza__icon">
+                  <use xlink:href="./img/icons/sprite.svg#time"></use>
+                </svg>
+                <span>10.00 AM - 12.00 PM</span>
+                <div class="pizza__btn">
+                  <button class="btn btn--orange">
+                    <svg class="pizza__btn-icon">
+                      <use xlink:href="./img/icons/sprite.svg#arrow"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="section app" id="app">
+      <div class="container app__container">
+        <div class="app__desc">
+          <h2 class="title app__title">Download  Our <span>Mobile App</span></h2>
+          <div class="app__text">
+            <p>It's all at your fingertips -- the restaurants you love. Find the right food to suit your mood, and make the first bite last. Go ahead, download app and get 50% discount
+            </p>
+          </div>
+          <div class="app__refs apps">
+            <a href="#" class="apps__store">
+              <img src="./img/app.jpg" alt="App Store" class="apps__pic">
+            </a>
+            <a href="#" class="apps__google">
+              <img src="./img/google.jpg" alt="Google Play" class="apps__pic">
+            </a>
+          </div>
+        </div>
+        <div class="app__img">
+          <img src="./img/mobile.png" alt="Mobile app" class="app__pic">
+        </div>
+      </div>
+    </section>
+    <section class="section reviews" id="reviews">
+      <div class="container reviews__container">
+        <h2 class="title reviews__title">What Our Client Are <span>Saying</span></h2>
+        <div class="reviews__content">
+          <div class="reviews__img">
+            <img src="./img/reviews.jpg" alt="" class="reviews__pic">
+          </div>
+          <div class="reviews__slider slider">
+            <ul class="swiper-wrapper slider__container">
+              <li class="swiper-slide slider__item">
+                <div class="slider__review" data-before="“" data-after="“">
+                  <p>EFood has the most intriguing food order system in the country. UI in both their app and web Is very simple and easy to use, enhancing the UX. Their delivery men are also quite professional and knows the neighborhood well. Till now I never had to guide them to my address for delivery; </p>
+                </div>
+                <div class="slider__name">Anglina Jole</div>
+                <div class="slider__occ">Food lover</div>
+              </li>
+              <li class="swiper-slide slider__item">
+                <div class="slider__review" data-before="“" data-after="“">
+                  <p>EFood has the most intriguing food order system in the country. UI in both their app and web Is very simple and easy to use, enhancing the UX. Their delivery men are also quite professional and knows the neighborhood well. Till now I never had to guide them to my address for delivery; </p>
+                </div>
+                <div class="slider__name">Anglina Jole</div>
+                <div class="slider__occ">Food lover</div>
+              </li>
+              <li class="swiper-slide slider__item">
+                <div class="slider__review" data-before="“" data-after="“">
+                  <p>EFood has the most intriguing food order system in the country. UI in both their app and web Is very simple and easy to use, enhancing the UX. Their delivery men are also quite professional and knows the neighborhood well. Till now I never had to guide them to my address for delivery; </p>
+                </div>
+                <div class="slider__name">Anglina Jole</div>
+                <div class="slider__occ">Food lover</div>
+              </li>
+              <li class="swiper-slide slider__item">
+                <div class="slider__review" data-before="“" data-after="“">
+                  <p>EFood has the most intriguing food order system in the country. UI in both their app and web Is very simple and easy to use, enhancing the UX. Their delivery men are also quite professional and knows the neighborhood well. Till now I never had to guide them to my address for delivery; </p>
+                </div>
+                <div class="slider__name">Anglina Jole</div>
+                <div class="slider__occ">Food lover</div>
+              </li>
+            </ul>
+            <div class="slider__nav">
+              <div class="slider__prev slider__prev--off">
+                <svg class="slider__icon">
+                  <use xlink:href="./img/icons/sprite.svg#arr"></use>
+                </svg>
+              </div>
+              <div class="slider__next">
+                <svg class="slider__icon">
+                  <use xlink:href="./img/icons/sprite.svg#arr"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section subscribe" id="subscribe">
+      <div class="container subscribe__container">
+        <h2 class="title subscribe__title">Subscribe to get the Latest Offer</h2>
+        <div class="subscribe__desc">
+          <p>Get our daily updates by subscribing to our newspaper, please drop your email below</p>
+        </div>
+        <form action="POST" class="form">
+          <label class="form__email">
+            <input class="form__input" type="email" name="email" required placeholder="Enter your email addres">
+          </label>
+          <button class="btn btn--orange form__sub">
+            <svg class="form__icon">
+              <use xlink:href="./img/icons/sprite.svg#arr-form"></use>
+            </svg>
+            <span>Subscribe</span>
+          </button>
+        </form>
+      </div>
+    </section>
+    <footer class="footer" id="footer">
+      <div class="footer__content">
+        <div class="container footer__container">
+          <div class="footer__left">
+            <a href="#" class="footer__logo logo">
+              <span>E</span>
+              <span>Food</span>
+            </a>
+            <ul class="footer__address">
+              <li class="footer__addr">
+                <a href="#" class="footer__addr-ref">
+                  <svg class="footer__address-icon">
+                    <use xlink:href="./img/icons/sprite.svg#map"></use>
+                  </svg>
+                  <span>Dhaka, Bangladesh</span>
+                </a>
+              </li>
+              <li class="footer__addr">
+                <a href="#" class="footer__addr-ref">
+                  <svg class="footer__address-icon">
+                    <use xlink:href="./img/icons/sprite.svg#phone"></use>
+                  </svg>
+                  <span>0943833399</span>
+                </a>
+              </li>
+              <li class="footer__addr">
+                <a href="#" class="footer__addr-ref">
+                  <svg class="footer__address-icon">
+                    <use xlink:href="./img/icons/sprite.svg#email"></use>
+                  </svg>
+                  <span>support@efood.com</span>
+                </a>
+              </li>
+            </ul>
+            <ul class="footer__socials">
+              <li class="footer__social">
+                <a href="#" class="footer__social-ref">
+                  <svg class="footer__social-icon">
+                    <use xlink:href="./img/icons/sprite.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__social">
+                <a href="#" class="footer__social-ref">
+                  <svg class="footer__social-icon">
+                    <use xlink:href="./img/icons/sprite.svg#twit"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__social footer__social--fill">
+                <a href="#" class="footer__social-ref">
+                  <svg class="footer__social-icon">
+                    <use xlink:href="./img/icons/sprite.svg#inst"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__social footer__social--fill">
+                <a href="#" class="footer__social-ref">
+                  <svg class="footer__social-icon">
+                    <use xlink:href="./img/icons/sprite.svg#pint"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__right">
+            <div class="footer__column">
+              <h4 class="footer__subtitle">Service</h4>
+              <ul class="footer__ref-list">
+                <li class="footer__ref-item">
+                  <a href="#" class="">
+                    <span>How it works</span>
+                  </a>
+                </li>
+                <li class="footer__ref-item">
+                  <a href="#" class="">
+                    <span>Home delivery</span>
+                  </a>
+                </li>
+                <li class="footer__ref-item">
+                  <a href="#" class="">
+                    <span>Prducts</span>
+                  </a>
+                </li>
+                <li class="footer__ref-item">
+                  <a href="#" class="">
+                    <span>Menu</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__column">
+              <h4 class="footer__subtitle">Company</h4>
+              <ul class="footer__ref-list">
+                <li class="footer__ref-item">
+                  <a href="#" class="">
+                    <span>About Us</span>
+                  </a>
+                </li>
+                <li class="footer__ref-item">
+                  <a href="#" class="">
+                    <span>News</span>
+                  </a>
+                </li>
+                <li class="footer__ref-item">
+                  <a href="#" class="">
+                    <span>Our trusted partner</span>
+                  </a>
+                </li>
+                <li class="footer__ref-item">
+                  <a href="#" class="">
+                    <span>New users FAQ</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__column">
+              <h4 class="footer__subtitle">Supports</h4>
+              <ul class="footer__ref-list">
+                <li class="footer__ref-item">
+                  <a href="#" class="">
+                    <span>Help center</span>
+                  </a>
+                </li>
+                <li class="footer__ref-item">
+                  <a href="#" class="">
+                    <span>Feedbcak</span>
+                  </a>
+                </li>
+                <li class="footer__ref-item">
+                  <a href="#" class="">
+                    <span>Contact us</span>
+                  </a>
+                </li>
+                <li class="footer__ref-item">
+                  <a href="#" class="">
+                    <span>Terms conditins</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__column">
+              <h4 class="footer__subtitle">Resources</h4>
+              <ul class="footer__ref-list">
+                <li class="footer__ref-item">
+                  <a href="#" class="">
+                    <span>Download app</span>
+                  </a>
+                </li>
+                <li class="footer__ref-item">
+                  <a href="#" class="">
+                    <span>Blog</span>
+                  </a>
+                </li>
+                <li class="footer__ref-item">
+                  <a href="#" class="">
+                    <span>What’s new</span>
+                  </a>
+                </li>
+                <li class="footer__ref-item">
+                  <a href="#" class="">
+                    <span>Sitemap</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__footer">
+        <div class="container footer__footer-container">
+          <div class="footer__copyright">
+            <span>© 2021 EFood - All rights reserved.</span>
+          </div>
+          <div class="footer__policy">
+            <a href="#" class="footer__policy-ref">Privacy</a>
+            <a href="#" class="footer__policy-ref">Security</a>
+            <a href="#" class="footer__policy-ref">Terms</a>
+          </div>
+        </div>
+      </div>
+    </footer>
   </div>
 </body>
 </html>

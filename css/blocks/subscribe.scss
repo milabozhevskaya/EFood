@@ -1,0 +1,72 @@
+.subscribe {
+  margin-bottom: rem(121px);
+  
+  &__container {
+    padding: rem(59px) 0 rem(57px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $orange;
+    border-radius: 20px;
+  }
+
+  &__title {
+    color: $white;
+    margin-bottom: rem(12px);
+  }
+
+  &__desc {
+    color: $white;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 30px;
+    margin-bottom: rem(32px);
+  }
+
+  & .form {
+    width: 70%;
+    position: relative;
+    background-color: $white;
+    box-shadow: 10px 24px 54px rgba(0, 0, 0, 0.07);
+    border-radius: 70px;
+    display: flex;
+    align-items: center;
+    padding: rem(10px) rem(10px) rem(10px) rem(43px);
+
+    &__email {
+      flex-grow: 1;
+    }
+    &__input {
+      width: 100%;
+      overflow: scroll;
+      outline: transparent;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 30px;
+      color: $dark;
+    }
+    &__input::placeholder {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 30px;
+      color: $dark;
+    }
+    &__sub {
+      display: flex;
+      align-items: center;
+      padding: rem(21px) rem(34px) rem(21px) rem(24px);
+      border-radius: 70px;
+      margin-left: auto;
+    }
+
+    &__icon {
+      width: 16px;
+      height: 16px;
+      fill: $white;
+      margin-right: rem(8px);
+    }
+  }
+}

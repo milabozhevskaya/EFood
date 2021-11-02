@@ -1,0 +1,19 @@
+.search {
+  margin-right: rem(60px);
+  &__icon {
+    width: rem(25px);
+    height: rem(25px);
+    stroke: #363853;
+    fill: none;
+    stroke-width: 1.5px;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
+  &:hover {
+    & .search__icon {
+      transition: .6s;
+      stroke: $orange;
+    }
+  }
+}
