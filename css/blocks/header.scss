@@ -7,6 +7,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @include phones {
+      max-width: rem(576px);
+    }
   }
 
   &__nav {
@@ -36,5 +40,9 @@
 
   @include tablets {
     padding-top: rem(20px);
+  }
+
+  @include phones {
+    padding-top: rem(8px);
   }
 }

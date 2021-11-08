@@ -2,6 +2,10 @@
   margin-right: rem(60px);
   position: relative;
 
+  &__ref {
+    display: block;
+  }
+
   &__icon {
     width: rem(25px);
     height: rem(25px);
@@ -11,6 +15,13 @@
     stroke-linecap: round;
     stroke-linejoin: round;
     transition: .6s;
+    margin: 0 auto;
+    display: block;
+
+    @include phones {
+      width: rem(20px);
+      height: rem(20px);
+    }
   }
 
   &::before {

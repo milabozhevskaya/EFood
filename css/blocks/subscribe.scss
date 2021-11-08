@@ -8,11 +8,21 @@
     align-items: center;
     background-color: $orange;
     border-radius: 20px;
+
+    @include phones {
+      padding: rem(29px) 0 rem(27px);
+      text-align: center;
+    }
   }
 
   &__title {
     color: $white;
     margin-bottom: rem(12px);
+
+    @include phones {
+      font-size: 34px;
+      margin-bottom: 0;
+    }
   }
 
   &__desc {
@@ -22,6 +32,11 @@
     font-size: 16px;
     line-height: 30px;
     margin-bottom: rem(32px);
+
+    @include phones {
+      width: 90%;
+      margin-bottom: rem(16px);
+    }
   }
 
   & .form {
@@ -36,7 +51,12 @@
 
     &__email {
       flex-grow: 1;
+
+      @include phones {
+        margin-bottom: rem(10px);
+      }
     }
+
     &__input {
       width: 100%;
       overflow: scroll;
@@ -46,7 +66,12 @@
       font-size: 18px;
       line-height: 30px;
       color: $dark;
+
+      @include phones {
+        text-align: center;
+      }
     }
+
     &__input::placeholder {
       font-style: normal;
       font-weight: normal;
@@ -54,12 +79,18 @@
       line-height: 30px;
       color: $dark;
     }
+
     &__sub {
       display: flex;
       align-items: center;
       padding: rem(21px) rem(34px) rem(21px) rem(24px);
       border-radius: 70px;
       margin-left: auto;
+
+      @include phones {
+        margin: 0 auto;
+        padding: rem(11px) rem(24px) rem(11px) rem(24px);
+      }
     }
 
     &__icon {
@@ -67,6 +98,13 @@
       height: 16px;
       fill: $white;
       margin-right: rem(8px);
+    }
+
+    @include phones {
+      width: 95%;
+      flex-direction: column;
+      padding: rem(10px) rem(10px) rem(10px) rem(10px);
+      border-radius: 50px;
     }
   }
 }

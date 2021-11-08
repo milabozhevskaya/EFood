@@ -20,6 +20,11 @@
 
   &__container {
     display: flex;
+
+    @include tablets {
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   &__left {
@@ -32,6 +37,13 @@
       margin-right: 7%;
       width: 20%;
     }
+
+    @include tablets {
+      margin-right: 0%;
+      width: 100%;
+      align-items: center;
+      margin-bottom: rem(25px);
+    }
   }
 
   &__logo {
@@ -43,6 +55,19 @@
     display: flex;
     flex-direction: column;
     margin-bottom: rem(15px);
+
+    @include tablets {
+      flex-direction: row;
+      justify-content: center;
+    }
+
+    @include phones {
+      @media screen and (max-width: 576px) {
+        flex-wrap: wrap;
+        line-height: 2;
+        max-width: rem(340px);
+      }
+    }
   }
 
   &__addr {
@@ -71,6 +96,15 @@
 
     &:not(:last-child) {
       margin-bottom: rem(15px);
+
+      @include tablets {
+        margin-bottom: 0;
+        margin-right: rem(20px);
+      }
+    }
+
+    @include tablets {
+      width: auto;
     }
   }
 
@@ -79,13 +113,17 @@
     height: 24px;
     fill: none;
     stroke: currentColor;
-    // transition: .6s;
+    flex-shrink: 0;
     margin-right: 7px;
   }
 
   &__socials {
     display: flex;
     justify-content: space-between;
+
+    @include tablets {
+      width: 36%;
+    }
   }
 
   &__social {
@@ -134,11 +172,36 @@
     @include notes {
       column-gap: 2%;
     }
+
+    @include tablets {
+      width: 85%;
+    }
+
+    @include phones {
+      @media screen and (max-width: 576px) {
+        width: 92%;
+        max-width: rem(300px);
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        column-gap: 0;
+        row-gap: rem(20px);
+      }
+    }
   }
 
   &__column {
     display: flex;
     flex-direction: column;
+
+    @include phones {
+      @media screen and (max-width: 576px) {
+        width: 50%;
+
+        &:nth-child(even) {
+          text-align: right;
+        }
+      }
+    }
   }
 
   &__subtitle {
@@ -148,24 +211,48 @@
     line-height: 49px;
     letter-spacing: 0.01em;
     margin-bottom: rem(22px);
+
+    @include phones {
+      @media screen and (max-width: 576px) {
+        margin-bottom: rem(8px);
+        line-height: 1.2;
+      }
+    }
   }
 
   &__ref-list {
     display: flex;
     flex-direction: column;
-  }
+  
+    // @include tablets {
+    //   width: 100%;
+    //   flex-direction: row;
+    //   justify-content: space-between;
+    //   font-size: 16px;
+    // }
+}
 
   &__ref-item {
     transition: .6s;
     
     &:not(:last-child) {
       margin-bottom: rem(22px);
+      
+      @include phones {
+        @media screen and (max-width: 576px) {
+          margin-bottom: rem(5px);
+        }
+      }
     }
 
     &:hover {
       color: $orange;
       transition: .6s;
     }
+
+    // @include tablets {
+    //   width: 25%;
+    // }
   }
 
   &__footer {
@@ -179,10 +266,26 @@
     font-size: 14px;
     line-height: 14px;
     color: rgba($dark, .5);
+
+    @include phones {
+      flex-direction: column;
+      align-items: center;
+    }
   }
+
+  &__copyright {
+    @include phones {
+      margin-bottom: rem(14px);
+    }
+  }
+
   &__policy a {
     &:not(:last-child) {
       margin-right: rem(53px);
+
+      @include phones {
+        margin-right: rem(14px);
+      }
     }
   }
 }

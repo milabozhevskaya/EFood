@@ -5,10 +5,17 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @include phones {
+      @media screen and (max-width: 576px) {
+        max-width: rem(460px);
+      }
+    }
   }
 
   &__title {
     margin-bottom: rem(55px);
+    text-align: center;
   }
 
   .categories {
@@ -19,6 +26,17 @@
     &__list {
       position: relative;
       overflow: hidden;
+    }
+
+    @include tablets {
+      align-items: center;
+    }
+
+    @include phones {
+      @media screen and (max-width: 576px) {
+        flex-direction: row;
+        align-items: flex-start;
+      }
     }
   }
 
@@ -48,6 +66,18 @@
         color: $white;
         transition: all .6s;
       }
+
+      @include tablets {
+        width: 26%;
+      }
+
+      @include phones {
+        width: 31%;
+
+        @media screen and (max-width: 576px) {
+          width: 95%;
+        }
+      }
     }
 
     &__btn {
@@ -56,11 +86,23 @@
       width: 100%;
       justify-content: center;
       padding: rem(13px) 0;
+
+      @include phones {
+        @media screen and (max-width: 576px) {
+          padding: rem(12px) 8px;
+          justify-content: flex-start;
+        }
+      }
     }
 
     &__pic {
       margin-right: rem(8px);
-      
+
+      @include phones {
+        @media screen and (max-width: 576px) {
+          margin-right: rem(6px);
+        }
+      }
     }
 
     &__icon {
@@ -69,6 +111,13 @@
       height: rem(44px);
       display: flex;
       align-items: center;
+
+      @include phones {
+        @media screen and (max-width: 576px) {
+          width: rem(18px);
+          height: rem(18px);
+        }
+      }
     }
 
     &__name {
@@ -77,20 +126,42 @@
       font-weight: normal;
       font-size: 20px;
       line-height: 24px;
+
+      @include phones {
+        @media screen and (max-width: 576px) {
+          font-size: 16px;
+          line-height: 1;
+        }
+      }
     }
 
     @include notes {
       column-gap: rem(6px);
     }
+
+    @include tablets {
+      gap: rem(16px);
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    @include phones {
+      @media screen and (max-width: 576px) {
+        flex-direction: column;
+        row-gap: rem(10px);
+        column-gap: 0;
+        width: 43%;
+      }
+    }
   }
 
   .category {
-    padding-bottom: rem(40px);
     padding-bottom: rem(40px);
     padding-left: rem(3px);
     padding-right: rem(3px);
     padding-top: rem(39px);
     cursor: pointer;
+    position: relative;
 
     &__list {
       display: flex;
@@ -99,6 +170,19 @@
       // column-gap: rem(26px);
       // overflow: hidden;
       position: relative;
+
+      @include phones {
+        // height: max-content;
+        // height: rem(400px);
+
+        @media screen and (max-width: 576px) {
+          top: 0;
+          left: 0;
+          flex-direction: column;
+          // height: max-content;
+          height: rem(450px);
+        }
+      }
     }
 
     &__item {
@@ -114,12 +198,20 @@
       flex-direction: column;
       align-items: center;
       padding-bottom: rem(22px);
+
       &.half-star {
         & .category__icon:last-child {
           display: block;
         }
+
         & .category__icon:nth-child(4) {
           display: none;
+        }
+      }
+
+      @include phones {
+        @media screen and (max-width: 576px) {
+          width: 100%;
         }
       }
     }
@@ -182,6 +274,18 @@
     &__btn {
       button {
         box-shadow: none;
+      }
+    }
+
+    @include tablets {
+      padding-top: rem(25px);
+      padding-bottom: rem(25px);
+      width: 90%;
+    }
+
+    @include phones {
+      @media screen and (max-width: 576px) {
+        width: 57%;
       }
     }
   }
@@ -269,6 +373,12 @@
         opacity: 1;
       }
     }
+
+    @include phones {
+      @media screen and (max-width: 576px) {
+        display: none;
+      }
+    }
   }
 
   .swiper-pagination {
@@ -287,5 +397,5 @@
     bottom: 0;
     left: 0;
     width: auto;
-}
+  }
 }

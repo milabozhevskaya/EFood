@@ -13,6 +13,15 @@
 
   &__list {
     width: 100%;
+
+    @include tablets {
+      width: 78%;
+    }
+
+    @include phones {
+      width: 83%;
+      max-width: rem(500px);
+    }
   }
 
   .pizza {
@@ -31,6 +40,18 @@
       border-radius: 53px 5px;
       box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.12);
       overflow: hidden;
+
+      @include notes {
+        width: 32.5%;
+      }
+
+      @include tablets {
+        width: 49%;
+      }
+
+      @include phones {
+        width: 100%;
+      }
     }
 
     &__img {
@@ -93,6 +114,13 @@
 
     @include notes {
       gap: rem(10px);
+    }
+
+    @include phones {
+      flex-direction: column;
+      row-gap: rem(10px);
+      column-gap: 0;
+      align-items: center;
     }
   }
 }
