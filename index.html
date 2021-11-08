@@ -6,6 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <!-- <script src="./main.js"></script> -->
+  <script defer src="./main.js"></script>
 </head>
 <body>
   <div class="wrapper">
@@ -127,199 +131,389 @@
               </a>
             </li>
           </ul>
-          <ul class="categories__list category">
-            <li class="category__item">
-              <div class="category__img">
-                <img src="./img/cheeseburger.png" alt="Cheesburger" class="category__pic">
-              </div>
-              <div class="category__stars">
-                <svg class="category__icon">
-                  <use xlink:href="./img/icons/sprite.svg#star"></use>
-                </svg>
-                <svg class="category__icon">
-                  <use xlink:href="./img/icons/sprite.svg#star"></use>
-                </svg>
-                <svg class="category__icon">
-                  <use xlink:href="./img/icons/sprite.svg#star"></use>
-                </svg>
-                <svg class="category__icon">
-                  <use xlink:href="./img/icons/sprite.svg#star"></use>
-                </svg>
-                <svg class="category__icon">
-                  <use xlink:href="./img/icons/sprite.svg#star"></use>
-                </svg>
-                <svg class="category__icon">
-                  <use xlink:href="./img/icons/sprite.svg#half-star"></use>
-                </svg>
-              </div>
-              <div class="category__desc">
-                <p>Cheeseburger With Salad</p>
-              </div>
-              <div class="category__rate">
-                <span>$18.00</span>
-              </div>
-              <div class="category__btn">
-                <button class="btn btn--orange">Add to Cart</button>
-              </div>
-            </li>
-            <li class="category__item half-star">
-              <div class="category__img">
-                <img src="./img/beef.png" alt="Beef Burger" class="category__pic">
-              </div>
-              <div class="category__stars">
-                <svg class="category__icon">
-                  <use xlink:href="./img/icons/sprite.svg#star"></use>
-                </svg>
-                <svg class="category__icon">
-                  <use xlink:href="./img/icons/sprite.svg#star"></use>
-                </svg>
-                <svg class="category__icon">
-                  <use xlink:href="./img/icons/sprite.svg#star"></use>
-                </svg>
-                <svg class="category__icon">
-                  <use xlink:href="./img/icons/sprite.svg#star"></use>
-                </svg>
-                <svg class="category__icon">
-                  <use xlink:href="./img/icons/sprite.svg#star"></use>
-                </svg>
-                <svg class="category__icon">
-                  <use xlink:href="./img/icons/sprite.svg#half-star"></use>
-                </svg>
-              </div>
-              <div class="category__desc">
-                <p>Beef Burger</p>
-              </div>
-              <div class="category__rate">
-                <span>$15.00</span>
-              </div>
-              <div class="category__btn">
-                <button class="btn btn--orange">Add to Cart</button>
-              </div>
-            </li>
-            <li class="category__item">
-              <div class="category__img">
-                <img src="./img/royel.png" alt="Royel Burger" class="category__pic">
-              </div>
-              <div class="category__stars">
-                <svg class="category__icon">
-                  <use xlink:href="./img/icons/sprite.svg#star"></use>
-                </svg>
-                <svg class="category__icon">
-                  <use xlink:href="./img/icons/sprite.svg#star"></use>
-                </svg>
-                <svg class="category__icon">
-                  <use xlink:href="./img/icons/sprite.svg#star"></use>
-                </svg>
-                <svg class="category__icon">
-                  <use xlink:href="./img/icons/sprite.svg#star"></use>
-                </svg>
-                <svg class="category__icon">
-                  <use xlink:href="./img/icons/sprite.svg#star"></use>
-                </svg>
-                <svg class="category__icon">
-                  <use xlink:href="./img/icons/sprite.svg#half-star"></use>
-                </svg>
-              </div>
-              <div class="category__desc">
-                <p>Royel Cheeseburger</p>
-              </div>
-              <div class="category__rate">
-                <span>$16.00</span>
-              </div>
-              <div class="category__btn">
-                <button class="btn btn--orange">Add to Cart</button>
-              </div>
-            </li>
-            <li class="category__item">
-              <div class="category__img">
-                <img src="./img/black.png" alt="Black gamburger" class="category__pic">
-              </div>
-              <div class="category__stars">
-                <svg class="category__icon">
-                  <use xlink:href="./img/icons/sprite.svg#star"></use>
-                </svg>
-                <svg class="category__icon">
-                  <use xlink:href="./img/icons/sprite.svg#star"></use>
-                </svg>
-                <svg class="category__icon">
-                  <use xlink:href="./img/icons/sprite.svg#star"></use>
-                </svg>
-                <svg class="category__icon">
-                  <use xlink:href="./img/icons/sprite.svg#star"></use>
-                </svg>
-                <svg class="category__icon">
-                  <use xlink:href="./img/icons/sprite.svg#star"></use>
-                </svg>
-                <svg class="category__icon">
-                  <use xlink:href="./img/icons/sprite.svg#half-star"></use>
-                </svg>
-              </div>
-              <div class="category__desc">
-                <p>Black Gambugrer </p>
-              </div>
-              <div class="category__rate">
-                <span>$14.00</span>
-              </div>
-              <div class="category__btn">
-                <button class="btn btn--orange">Add to Cart</button>
-              </div>
-            </li>
-            <li class="category__item">
-              <div class="category__img">
-                <img src="./img/chicken.png" alt="Chicken Burger" class="category__pic">
-              </div>
-              <div class="category__stars">
-                <svg class="category__icon">
-                  <use xlink:href="./img/icons/sprite.svg#star"></use>
-                </svg>
-                <svg class="category__icon">
-                  <use xlink:href="./img/icons/sprite.svg#star"></use>
-                </svg>
-                <svg class="category__icon">
-                  <use xlink:href="./img/icons/sprite.svg#star"></use>
-                </svg>
-                <svg class="category__icon">
-                  <use xlink:href="./img/icons/sprite.svg#star"></use>
-                </svg>
-                <svg class="category__icon">
-                  <use xlink:href="./img/icons/sprite.svg#star"></use>
-                </svg>
-                <svg class="category__icon">
-                  <use xlink:href="./img/icons/sprite.svg#half-star"></use>
-                </svg>
-              </div>
-              <div class="category__desc">
-                <p>Chicken Burger</p>
-              </div>
-              <div class="category__rate">
-                <span>$15.00</span>
-              </div>
-              <div class="category__btn">
-                <button class="btn btn--orange">Add to Cart</button>
-              </div>
-            </li>
-          </ul>
+          <div class="categories__list category">
+            <ul class="category__list swiper-wrapper">
+              <li class="category__item swiper-slide">
+                <div class="category__img">
+                  <img src="./img/cheeseburger.png" alt="Cheesburger" class="category__pic">
+                </div>
+                <div class="category__stars">
+                  <svg class="category__icon">
+                    <use xlink:href="./img/icons/sprite.svg#star"></use>
+                  </svg>
+                  <svg class="category__icon">
+                    <use xlink:href="./img/icons/sprite.svg#star"></use>
+                  </svg>
+                  <svg class="category__icon">
+                    <use xlink:href="./img/icons/sprite.svg#star"></use>
+                  </svg>
+                  <svg class="category__icon">
+                    <use xlink:href="./img/icons/sprite.svg#star"></use>
+                  </svg>
+                  <svg class="category__icon">
+                    <use xlink:href="./img/icons/sprite.svg#star"></use>
+                  </svg>
+                  <svg class="category__icon">
+                    <use xlink:href="./img/icons/sprite.svg#half-star"></use>
+                  </svg>
+                </div>
+                <div class="category__desc">
+                  <p>Cheeseburger With Salad</p>
+                </div>
+                <div class="category__rate">
+                  <span>$18.00</span>
+                </div>
+                <div class="category__btn">
+                  <button class="btn btn--orange">Add to Cart</button>
+                </div>
+              </li>
+              <li class="category__item half-star swiper-slide">
+                <div class="category__img">
+                  <img src="./img/beef.png" alt="Beef Burger" class="category__pic">
+                </div>
+                <div class="category__stars">
+                  <svg class="category__icon">
+                    <use xlink:href="./img/icons/sprite.svg#star"></use>
+                  </svg>
+                  <svg class="category__icon">
+                    <use xlink:href="./img/icons/sprite.svg#star"></use>
+                  </svg>
+                  <svg class="category__icon">
+                    <use xlink:href="./img/icons/sprite.svg#star"></use>
+                  </svg>
+                  <svg class="category__icon">
+                    <use xlink:href="./img/icons/sprite.svg#star"></use>
+                  </svg>
+                  <svg class="category__icon">
+                    <use xlink:href="./img/icons/sprite.svg#star"></use>
+                  </svg>
+                  <svg class="category__icon">
+                    <use xlink:href="./img/icons/sprite.svg#half-star"></use>
+                  </svg>
+                </div>
+                <div class="category__desc">
+                  <p>Beef Burger</p>
+                </div>
+                <div class="category__rate">
+                  <span>$15.00</span>
+                </div>
+                <div class="category__btn">
+                  <button class="btn btn--orange">Add to Cart</button>
+                </div>
+              </li>
+              <li class="category__item swiper-slide">
+                <div class="category__img">
+                  <img src="./img/royel.png" alt="Royel Burger" class="category__pic">
+                </div>
+                <div class="category__stars">
+                  <svg class="category__icon">
+                    <use xlink:href="./img/icons/sprite.svg#star"></use>
+                  </svg>
+                  <svg class="category__icon">
+                    <use xlink:href="./img/icons/sprite.svg#star"></use>
+                  </svg>
+                  <svg class="category__icon">
+                    <use xlink:href="./img/icons/sprite.svg#star"></use>
+                  </svg>
+                  <svg class="category__icon">
+                    <use xlink:href="./img/icons/sprite.svg#star"></use>
+                  </svg>
+                  <svg class="category__icon">
+                    <use xlink:href="./img/icons/sprite.svg#star"></use>
+                  </svg>
+                  <svg class="category__icon">
+                    <use xlink:href="./img/icons/sprite.svg#half-star"></use>
+                  </svg>
+                </div>
+                <div class="category__desc">
+                  <p>Royel Cheeseburger</p>
+                </div>
+                <div class="category__rate">
+                  <span>$16.00</span>
+                </div>
+                <div class="category__btn">
+                  <button class="btn btn--orange">Add to Cart</button>
+                </div>
+              </li>
+              <li class="category__item swiper-slide">
+                <div class="category__img">
+                  <img src="./img/black.png" alt="Black gamburger" class="category__pic">
+                </div>
+                <div class="category__stars">
+                  <svg class="category__icon">
+                    <use xlink:href="./img/icons/sprite.svg#star"></use>
+                  </svg>
+                  <svg class="category__icon">
+                    <use xlink:href="./img/icons/sprite.svg#star"></use>
+                  </svg>
+                  <svg class="category__icon">
+                    <use xlink:href="./img/icons/sprite.svg#star"></use>
+                  </svg>
+                  <svg class="category__icon">
+                    <use xlink:href="./img/icons/sprite.svg#star"></use>
+                  </svg>
+                  <svg class="category__icon">
+                    <use xlink:href="./img/icons/sprite.svg#star"></use>
+                  </svg>
+                  <svg class="category__icon">
+                    <use xlink:href="./img/icons/sprite.svg#half-star"></use>
+                  </svg>
+                </div>
+                <div class="category__desc">
+                  <p>Black Gambugrer </p>
+                </div>
+                <div class="category__rate">
+                  <span>$14.00</span>
+                </div>
+                <div class="category__btn">
+                  <button class="btn btn--orange">Add to Cart</button>
+                </div>
+              </li>
+              <li class="category__item swiper-slide">
+                <div class="category__img">
+                  <img src="./img/chicken.png" alt="Chicken Burger" class="category__pic">
+                </div>
+                <div class="category__stars">
+                  <svg class="category__icon">
+                    <use xlink:href="./img/icons/sprite.svg#star"></use>
+                  </svg>
+                  <svg class="category__icon">
+                    <use xlink:href="./img/icons/sprite.svg#star"></use>
+                  </svg>
+                  <svg class="category__icon">
+                    <use xlink:href="./img/icons/sprite.svg#star"></use>
+                  </svg>
+                  <svg class="category__icon">
+                    <use xlink:href="./img/icons/sprite.svg#star"></use>
+                  </svg>
+                  <svg class="category__icon">
+                    <use xlink:href="./img/icons/sprite.svg#star"></use>
+                  </svg>
+                  <svg class="category__icon">
+                    <use xlink:href="./img/icons/sprite.svg#half-star"></use>
+                  </svg>
+                </div>
+                <div class="category__desc">
+                  <p>Chicken Burger</p>
+                </div>
+                <div class="category__rate">
+                  <span>$15.00</span>
+                </div>
+                <div class="category__btn">
+                  <button class="btn btn--orange">Add to Cart</button>
+                </div>
+              </li>
+              <li class="category__item swiper-slide">
+                <div class="category__img">
+                  <img src="./img/cheeseburger.png" alt="Cheesburger" class="category__pic">
+                </div>
+                <div class="category__stars">
+                  <svg class="category__icon">
+                    <use xlink:href="./img/icons/sprite.svg#star"></use>
+                  </svg>
+                  <svg class="category__icon">
+                    <use xlink:href="./img/icons/sprite.svg#star"></use>
+                  </svg>
+                  <svg class="category__icon">
+                    <use xlink:href="./img/icons/sprite.svg#star"></use>
+                  </svg>
+                  <svg class="category__icon">
+                    <use xlink:href="./img/icons/sprite.svg#star"></use>
+                  </svg>
+                  <svg class="category__icon">
+                    <use xlink:href="./img/icons/sprite.svg#star"></use>
+                  </svg>
+                  <svg class="category__icon">
+                    <use xlink:href="./img/icons/sprite.svg#half-star"></use>
+                  </svg>
+                </div>
+                <div class="category__desc">
+                  <p>Cheeseburger With Salad</p>
+                </div>
+                <div class="category__rate">
+                  <span>$18.00</span>
+                </div>
+                <div class="category__btn">
+                  <button class="btn btn--orange">Add to Cart</button>
+                </div>
+              </li>
+              <li class="category__item half-star swiper-slide">
+                <div class="category__img">
+                  <img src="./img/beef.png" alt="Beef Burger" class="category__pic">
+                </div>
+                <div class="category__stars">
+                  <svg class="category__icon">
+                    <use xlink:href="./img/icons/sprite.svg#star"></use>
+                  </svg>
+                  <svg class="category__icon">
+                    <use xlink:href="./img/icons/sprite.svg#star"></use>
+                  </svg>
+                  <svg class="category__icon">
+                    <use xlink:href="./img/icons/sprite.svg#star"></use>
+                  </svg>
+                  <svg class="category__icon">
+                    <use xlink:href="./img/icons/sprite.svg#star"></use>
+                  </svg>
+                  <svg class="category__icon">
+                    <use xlink:href="./img/icons/sprite.svg#star"></use>
+                  </svg>
+                  <svg class="category__icon">
+                    <use xlink:href="./img/icons/sprite.svg#half-star"></use>
+                  </svg>
+                </div>
+                <div class="category__desc">
+                  <p>Beef Burger</p>
+                </div>
+                <div class="category__rate">
+                  <span>$15.00</span>
+                </div>
+                <div class="category__btn">
+                  <button class="btn btn--orange">Add to Cart</button>
+                </div>
+              </li>
+              <li class="category__item swiper-slide">
+                <div class="category__img">
+                  <img src="./img/royel.png" alt="Royel Burger" class="category__pic">
+                </div>
+                <div class="category__stars">
+                  <svg class="category__icon">
+                    <use xlink:href="./img/icons/sprite.svg#star"></use>
+                  </svg>
+                  <svg class="category__icon">
+                    <use xlink:href="./img/icons/sprite.svg#star"></use>
+                  </svg>
+                  <svg class="category__icon">
+                    <use xlink:href="./img/icons/sprite.svg#star"></use>
+                  </svg>
+                  <svg class="category__icon">
+                    <use xlink:href="./img/icons/sprite.svg#star"></use>
+                  </svg>
+                  <svg class="category__icon">
+                    <use xlink:href="./img/icons/sprite.svg#star"></use>
+                  </svg>
+                  <svg class="category__icon">
+                    <use xlink:href="./img/icons/sprite.svg#half-star"></use>
+                  </svg>
+                </div>
+                <div class="category__desc">
+                  <p>Royel Cheeseburger</p>
+                </div>
+                <div class="category__rate">
+                  <span>$16.00</span>
+                </div>
+                <div class="category__btn">
+                  <button class="btn btn--orange">Add to Cart</button>
+                </div>
+              </li>
+              <li class="category__item swiper-slide">
+                <div class="category__img">
+                  <img src="./img/black.png" alt="Black gamburger" class="category__pic">
+                </div>
+                <div class="category__stars">
+                  <svg class="category__icon">
+                    <use xlink:href="./img/icons/sprite.svg#star"></use>
+                  </svg>
+                  <svg class="category__icon">
+                    <use xlink:href="./img/icons/sprite.svg#star"></use>
+                  </svg>
+                  <svg class="category__icon">
+                    <use xlink:href="./img/icons/sprite.svg#star"></use>
+                  </svg>
+                  <svg class="category__icon">
+                    <use xlink:href="./img/icons/sprite.svg#star"></use>
+                  </svg>
+                  <svg class="category__icon">
+                    <use xlink:href="./img/icons/sprite.svg#star"></use>
+                  </svg>
+                  <svg class="category__icon">
+                    <use xlink:href="./img/icons/sprite.svg#half-star"></use>
+                  </svg>
+                </div>
+                <div class="category__desc">
+                  <p>Black Gambugrer </p>
+                </div>
+                <div class="category__rate">
+                  <span>$14.00</span>
+                </div>
+                <div class="category__btn">
+                  <button class="btn btn--orange">Add to Cart</button>
+                </div>
+              </li>
+              <li class="category__item swiper-slide">
+                <div class="category__img">
+                  <img src="./img/chicken.png" alt="Chicken Burger" class="category__pic">
+                </div>
+                <div class="category__stars">
+                  <svg class="category__icon">
+                    <use xlink:href="./img/icons/sprite.svg#star"></use>
+                  </svg>
+                  <svg class="category__icon">
+                    <use xlink:href="./img/icons/sprite.svg#star"></use>
+                  </svg>
+                  <svg class="category__icon">
+                    <use xlink:href="./img/icons/sprite.svg#star"></use>
+                  </svg>
+                  <svg class="category__icon">
+                    <use xlink:href="./img/icons/sprite.svg#star"></use>
+                  </svg>
+                  <svg class="category__icon">
+                    <use xlink:href="./img/icons/sprite.svg#star"></use>
+                  </svg>
+                  <svg class="category__icon">
+                    <use xlink:href="./img/icons/sprite.svg#half-star"></use>
+                  </svg>
+                </div>
+                <div class="category__desc">
+                  <p>Chicken Burger</p>
+                </div>
+                <div class="category__rate">
+                  <span>$15.00</span>
+                </div>
+                <div class="category__btn">
+                  <button class="btn btn--orange">Add to Cart</button>
+                </div>
+              </li>
+            </ul>
+          </div>
           <div class="categories__pagination pagination">
             <div class="pagination__prev">
               <svg class="pagination__icon">
                 <use xlink:href="./img/icons/sprite.svg#vector"></use>
               </svg>
             </div>
-            <ul class="pagination__list">
+            <ul class="pagination__list swiper-pagination">
               <li class="pagination__item">
-                <a href="#" class="pagination__ref" aria-label="point-pagination"></a>
+                <a href="" class="pagination__ref" aria-label="point-pagination"></a>
               </li>
               <li class="pagination__item">
-                <a href="#" class="pagination__ref" aria-label="point-pagination"></a>
+                <a href="" class="pagination__ref" aria-label="point-pagination"></a>
               </li>
               <li class="pagination__item">
-                <a href="#" class="pagination__ref" aria-label="point-pagination"></a>
+                <a href="" class="pagination__ref" aria-label="point-pagination"></a>
               </li>
               <li class="pagination__item">
-                <a href="#" class="pagination__ref" aria-label="point-pagination"></a>
+                <a href="" class="pagination__ref" aria-label="point-pagination"></a>
+              </li>
+              <li class="pagination__item">
+                <a href="" class="pagination__ref" aria-label="point-pagination"></a>
+              </li>
+              <li class="pagination__item">
+                <a href="" class="pagination__ref" aria-label="point-pagination"></a>
+              </li>
+              <li class="pagination__item">
+                <a href="" class="pagination__ref" aria-label="point-pagination"></a>
+              </li>
+              <li class="pagination__item">
+                <a href="" class="pagination__ref" aria-label="point-pagination"></a>
+              </li>
+              <li class="pagination__item">
+                <a href="" class="pagination__ref" aria-label="point-pagination"></a>
+              </li>
+              <li class="pagination__item">
+                <a href="" class="pagination__ref" aria-label="point-pagination"></a>
               </li>
             </ul>
-            <div class="pagination__prev">
+            <div class="pagination__next">
               <svg class="pagination__icon">
                 <use xlink:href="./img/icons/sprite.svg#vector"></use>
               </svg>
@@ -562,7 +756,7 @@
               </li>
             </ul>
             <div class="slider__nav">
-              <div class="slider__prev slider__prev--off">
+              <div class="slider__prev">
                 <svg class="slider__icon">
                   <use xlink:href="./img/icons/sprite.svg#arr"></use>
                 </svg>

@@ -38,4 +38,12 @@
       stroke: $orange;
     }
   }
+
+  @include notes {
+    margin-right: rem(35px);
+  }
+
+  @include tablets {
+    margin-right: rem(25px);
+  }
 }

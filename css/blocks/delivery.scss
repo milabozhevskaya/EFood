@@ -11,7 +11,11 @@
     width: 54%;
     overflow: hidden;
     flex-shrink: 0;
-    margin-right: 130px;
+    margin-right: 7%;
+
+    @include notes {
+      margin-right: 0;
+    }
   }
 
   &__pic {

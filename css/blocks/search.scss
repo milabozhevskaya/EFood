@@ -16,4 +16,12 @@
       stroke: $orange;
     }
   }
+
+  @include notes {
+    margin-right: rem(30px);
+  }
+
+  @include tablets {
+    margin-right: rem(10px);
+  }
 }

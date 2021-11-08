@@ -18,7 +18,7 @@
   .pizza {
     display: flex;
     flex-wrap: wrap;
-    gap: rem(43px);
+    gap: rem(37px);
     justify-content: space-between;
     color: $dark;
 
@@ -89,6 +89,10 @@
         padding: 7px 33px;
         border-radius: 20px 20px 0px;
       }
+    }
+
+    @include notes {
+      gap: rem(10px);
     }
   }
 }
