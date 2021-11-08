@@ -5,6 +5,11 @@
   &__container {
     display: flex;
     align-items: center;
+
+    @include phones {
+      flex-direction: column;
+      width: 90%;
+    }
   }
 
   &__img {
@@ -16,20 +21,45 @@
     @include notes {
       margin-right: 0;
     }
+
+    @include tablets {
+      width: 44%;
+    }
+
+    @include phones {
+      order: 2;
+      width: 90%;
+    }
   }
 
   &__pic {
     width: 100%;
     object-fit: cover;
+
+    @include tablets {
+      width: 110%;
+    }
+
+    @include phones {
+      width: 120%;
+    }
   }
 
   &__desc {
     display: flex;
     flex-direction: column;
+  
+    @include phones {
+      align-items: center;
+    }
   }
 
   &__title {
     margin-bottom: rem(30px);
+
+    @include phones {
+      text-align: center;
+    }
   }
 
   &__text {

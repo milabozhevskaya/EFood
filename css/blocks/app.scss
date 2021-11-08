@@ -4,6 +4,11 @@
   &__container {
     display: flex;
     align-items: center;
+
+    @include phones {
+      flex-direction: column;
+      width: 90%;
+    }
   }
 
   &__desc {
@@ -11,6 +16,12 @@
     flex-direction: column;
     color: $dark;
     padding-right: rem(10px);
+
+    @include phones {
+      align-items: center;
+      text-align: center;
+      margin-bottom: rem(30px);
+    }
   }
 
   &__title {
@@ -34,7 +45,10 @@
       margin-right: rem(35px);
       width: rem(120px);
       height: rem(40px);
-      
+
+      @include tablets {
+        margin-right: rem(15px);
+      }
     }
 
     &__google {
@@ -47,6 +61,14 @@
   &__img {
     width: 52.8%;
     flex-shrink: 0;
+
+    @include notes {
+      width: 49%;
+    }
+
+    @include phones {
+      width: 100%;
+    }
   }
 
   &__pic {

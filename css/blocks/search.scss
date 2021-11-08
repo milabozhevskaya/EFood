@@ -1,5 +1,10 @@
 .search {
   margin-right: rem(60px);
+
+  &__ref {
+    display: block;
+  }
+
   &__icon {
     width: rem(25px);
     height: rem(25px);
@@ -8,6 +13,13 @@
     stroke-width: 1.5px;
     stroke-linecap: round;
     stroke-linejoin: round;
+    margin: 0 auto;
+    display: block;
+
+    @include phones {
+      width: rem(20px);
+      height: rem(20px);
+    }
   }
 
   &:hover {

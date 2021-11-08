@@ -1,6 +1,11 @@
 .nav {
   &__list {
     display: flex;
+
+    @include phones {
+      position: absolute;
+      display: none;
+    }
   }
 
   &__item {
