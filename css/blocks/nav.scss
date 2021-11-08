@@ -24,5 +24,19 @@
     &:not(:last-child) {
       margin-right: rem(57px);
     }
+
+    @include notes {
+      &:not(:last-child) {
+        margin-right: rem(26px);
+      }
+    }
+
+    @include tablets {
+      font-size: 18px;
+
+      &:not(:last-child) {
+        margin-right: rem(15px);
+      }
+    }
   }
 }

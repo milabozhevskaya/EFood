@@ -10,6 +10,11 @@
     flex: 1;
     flex-direction: column;
     padding-top: rem(55px);
+
+    @include notes {
+      padding: 0;
+      align-self: center;
+    }
   }
 
   &__title {
@@ -25,6 +30,11 @@
     span:nth-child(2) {
       color: $orange;
     }
+
+    @include tablets {
+      font-size: 40px;
+      line-height: 51px;
+    }
   }
 
   &__subtitle {
@@ -36,6 +46,12 @@
     text-transform: capitalize;
     margin-bottom: rem(45px);
     color: $dark;
+
+    @include tablets {
+      font-size: 18px;
+      line-height: 1.8;
+      margin-bottom: rem(25px);
+    }
   }
 
   &__btn {
@@ -51,12 +67,17 @@
     text-align: center;
     text-decoration-line: underline;
     color: $dark;
+
+    @include tablets {
+      font-size: 16px;
+    }
   }
 
   &__img {
     width: 55%;
     flex-shrink: 0;
     position: relative;
+    align-self: center;
 
     &::before {
       content: '';
@@ -86,6 +107,14 @@
       background-position-x: 13px;
       background-repeat: no-repeat;
       background-size: cover;
+
+      @include notes {
+        right: -2%;
+      }
+    }
+    
+    @include tablets {
+      width: 44%;
     }
   }
 
@@ -96,5 +125,11 @@
     object-fit: cover;
     position: relative;
     right: -5%;
+
+    @include notes {
+      right: 0;
+      height: auto;
+      left: -5%;
+    }
   }
 }

@@ -1,7 +1,7 @@
 .header {
   width: 100%;
   padding-top: 60px;
-  margin-bottom: rem(104px);
+  margin-bottom: 8%;
 
   &__container {
     display: flex;
@@ -14,11 +14,27 @@
     flex: 1;
     justify-content: flex-end;
     margin-right: rem(60px);
+
+    @include notes {
+      margin-right: rem(30px);
+    }
+
+    @include tablets {
+      margin-right: rem(20px);
+    }
   }
 
   &__right {
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+
+  @include notes {
+    margin-bottom: 5%;
+  }
+
+  @include tablets {
+    padding-top: rem(20px);
   }
 }

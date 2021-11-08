@@ -22,6 +22,10 @@
     overflow: hidden;
     max-width: rem(433px);
     margin-right: rem(68px);
+
+    @include notes {
+      margin-right: rem(20px);
+    }
   }
 
   &__pic {
@@ -33,7 +37,7 @@
     flex-grow: 1;
     height: 100%;
     min-height: max-content;
-    // min-height: rem(506px);
+    min-height: rem(506px);
   }
 
   & .slider {
@@ -41,9 +45,9 @@
     overflow: hidden;
 
     &__container {
-      position: absolute;
-      left: 0;
-      top: 0;
+      // position: absolute;
+      // left: 0;
+      // top: 0;
       height: max-content;
       display: flex;
       width: calc(100% * 4);
@@ -54,6 +58,10 @@
       flex-direction: column;
       width: calc(100% / 4);
       padding: rem(54px) rem(44px) 0;
+
+      @include notes {
+        padding: rem(10px) rem(44px) 0;
+      }
     }
 
     &__review {
@@ -120,6 +128,7 @@
       position: absolute;
       bottom: 0;
       right: rem(49px);
+      z-index: 10;
     }
 
     &__prev {
@@ -135,7 +144,7 @@
       cursor: pointer;
     }
 
-    &__prev--off {
+    & .swiper-button-disabled {
       & svg {
         stroke: $dark;
         opacity: .6;

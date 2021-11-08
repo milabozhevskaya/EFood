@@ -3,7 +3,6 @@
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
-  line-height: 21px;
   text-align: center;
   padding: rem(15px) rem(28px);
   border-radius: 5px;
@@ -18,5 +17,9 @@
   &:hover {
     background-color: $dark;
     transition: .6s;
+  }
+
+  @include tablets {
+    padding: rem(12px) rem(22px);
   }
 }
